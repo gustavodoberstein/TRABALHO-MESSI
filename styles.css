@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #FF862A;
+    --laranja-claro: #2acdff;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #2acdff;
 }
 
 
@@ -22,13 +22,13 @@ section {
 
 
 .nav-link {
-    color: #CB6D43;
+    color: #2acdff;
     font-weight: 600;
 }
 
 .inicio-fundo {
     /* aula 3 */
-    background-image: url('4965007.jpg');
+    background-image: url('photo-1487466365202-1afdb86c764e.jpeg');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
@@ -79,8 +79,7 @@ section {
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('flor.png') top right no-repeat,
-        url('flor-esquerda.png') bottom left no-repeat;
+    background: url('flor.png') top right no-repeat, bottom left no-repeat;
     background-size: 180px 180px;
     /* Ajuste o tamanho conforme necessário */
 }
@@ -103,17 +102,17 @@ h2 {
 }
 
 #galeria {
-    background-color: #FAF4F4;
+    background-color: #ffffff;
 
 }
 
 .fundo-galeria {
-    background: url('flor-bottom-direita.png') bottom right no-repeat;
+    background: bottom right no-repeat;
     background-size: 180px 180px;
 }
 
 #contato {
-    background-image: url('4965007.jpg');
+    background-image: url('photo-1487466365202-1afdb86c764e.jpeg');
     background-size: cover;
     padding: 4rem 0;
     /* Espaçamento interno para a seção de contato */
@@ -132,12 +131,12 @@ h2 {
 }
 
 .formulario button {
-    background-color: #CB6D43;
+    background-color: #2acdff;
     border: none;
     font-weight: bold;
 }
 
 /* chama classe do bootstrap para modificar a cor */
 .form-control {
-    background-color: #F1EDEF;
+    background-color: #2acdff;
 }
