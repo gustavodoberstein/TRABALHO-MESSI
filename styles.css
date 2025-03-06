@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #2acdff;
+    --laranja-claro: #07070a65;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #2acdff;
+    background-color: #ffffff;
 }
 
 
@@ -22,7 +22,7 @@ section {
 
 
 .nav-link {
-    color: #2acdff;
+    color: #c2c2c2;
     font-weight: 600;
 }
 
@@ -79,7 +79,7 @@ section {
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('flor.png') top right no-repeat, bottom left no-repeat;
+    background: url('pngtree-realistic-gold-soccer-ball-trophy-with-laurel-wreath-golden-prize-victory-png-image_12464489-removebg-preview.png') top right no-repeat, bottom left no-repeat;
     background-size: 180px 180px;
     /* Ajuste o tamanho conforme necessário */
 }
@@ -103,6 +103,8 @@ h2 {
 
 #galeria {
     background-color: #ffffff;
+    background: url('images-removebg-preview.png') top right no-repeat, bottom left no-repeat;
+    background-size: 300px 300px;
 
 }
 
@@ -112,7 +114,7 @@ h2 {
 }
 
 #contato {
-    background-image: url('photo-1487466365202-1afdb86c764e.jpeg');
+    background-image: url('');
     background-size: cover;
     padding: 4rem 0;
     /* Espaçamento interno para a seção de contato */
@@ -120,7 +122,7 @@ h2 {
 }
 
 .formulario {
-    background-color: #ffffff;
+    background-color: #f3f3f3;
     padding: 2rem;
     /* Espaçamento interno dentro do formulário */
     border-radius: 10px;
@@ -131,12 +133,33 @@ h2 {
 }
 
 .formulario button {
-    background-color: #2acdff;
+    background-color: #c2c2c2;
     border: none;
     font-weight: bold;
 }
 
 /* chama classe do bootstrap para modificar a cor */
 .form-control {
-    background-color: #2acdff;
+    background-color: #ffffff;
+}
+.menu-acessibilidade{
+    position: fixed;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
+}
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+.opcoes-acessibilidade{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+}
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+.apresenta-lista{
+    display: none;
 }
