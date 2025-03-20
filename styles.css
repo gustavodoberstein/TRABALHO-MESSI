@@ -1,9 +1,11 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #07070a65;
+    --laranja-claro: #000000;
+    --alto-contraste-fundo: #32b0eb;
+    --alto-contraste-texto: #ffd700;
+    --alto-contraste-link: #ffd700;
 }
 
 body {
@@ -22,21 +24,23 @@ section {
 
 
 .nav-link {
-    color: #c2c2c2;
+    color: #000000;
     font-weight: 600;
 }
 
 .inicio-fundo {
-    /* aula 3 */
-    background-image: url('photo-1487466365202-1afdb86c764e.jpeg');
-    /* Substitua pelo caminho da sua imagem */
     background-size: cover;
-    background-position: right;
+    background-position: center;
     border-radius: 80px;
     width: 100%;
     height: 606px;
     padding: 40px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
 /* posicionamento para a imagem à direita */
@@ -62,9 +66,7 @@ section {
     border-radius: 30px;
     border: none;
     width: 14em;
-    /* Convertido para em aumenta o tamanho da fonte por tabela*/
     height: 3em;
-    /* Convertido para em */
     align-content: center;
 
 }
@@ -79,7 +81,8 @@ section {
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('pngtree-realistic-gold-soccer-ball-trophy-with-laurel-wreath-golden-prize-victory-png-image_12464489-removebg-preview.png') top right no-repeat, bottom left no-repeat;
+    background: url('images-removebg-preview.png') top right no-repeat,
+        url('') bottom left no-repeat;
     background-size: 180px 180px;
     /* Ajuste o tamanho conforme necessário */
 }
@@ -103,18 +106,16 @@ h2 {
 
 #galeria {
     background-color: #ffffff;
-    background: url('images-removebg-preview.png') top right no-repeat, bottom left no-repeat;
-    background-size: 300px 300px;
 
 }
 
 .fundo-galeria {
-    background: bottom right no-repeat;
+    background: url('pngtree-realistic-gold-soccer-ball-trophy-with-laurel-wreath-golden-prize-victory-png-image_12464489-removebg-preview.png') bottom right no-repeat;
     background-size: 180px 180px;
 }
 
 #contato {
-    background-image: url('');
+    background-image: url('c0e2fcd94339fa1f986761d54d24858cb3441d3dr1-1920-1080v2_uhq.jpg');
     background-size: cover;
     padding: 4rem 0;
     /* Espaçamento interno para a seção de contato */
@@ -122,23 +123,22 @@ h2 {
 }
 
 .formulario {
-    background-color: #f3f3f3;
+    background-color: #ffffff;
     padding: 2rem;
     /* Espaçamento interno dentro do formulário */
     border-radius: 10px;
     /* Borda arredondada para o formulário */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 255, 13, 0.1);
     /* Sombra suave para destacar o formulário */
     font-weight: bold;
 }
 
 .formulario button {
-    background-color: #c2c2c2;
+    background-color: #000000;
     border: none;
     font-weight: bold;
 }
 
-/* chama classe do bootstrap para modificar a cor */
 .form-control {
     background-color: #ffffff;
 }
@@ -148,18 +148,55 @@ h2 {
     right:20px;
     z-index: 1000;
 }
+
 .rotacao-botao{
     transform: rotate(-90deg);
     transform-origin: right center;
 }
+
 .opcoes-acessibilidade{
     margin-top:10px;
     display: flex;
     flex-direction: column;
 }
+
 .opcoes-acessibilidade button{
     margin-bottom: 5px;
 }
 .apresenta-lista{
     display: none;
+}
+
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria {
+    background: none;
 }
